@@ -223,7 +223,7 @@ export default ((opts?: NotePropertiesComponentOptions) => {
                   class={classNames(
                     "note-properties-value",
                     "metadata-property-value",
-                    key === "link" && "link-button",
+                    key === "Link" && "link-button",
                   )}
                 >
                   {key === "tags" && Array.isArray(value)
