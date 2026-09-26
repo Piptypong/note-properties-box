@@ -88,11 +88,26 @@
     }
   }
 
-  .note-properties-number {
-    font-family: var(--codeFont);
-    font-size: 0.85em;
-  }
+  // .note-properties-number {
+  //   font-family: var(--codeFont);
+  //   font-size: 0.85em;
+  // }
 
+  // My custom styles for the link button
+  .link-button .note-properties-link{
+    .link-button a {
+      background-color: var(--secondary);
+      color: var(--light);
+      padding: 0.2rem 0.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      &:hover {
+        background-color: var(--highlight);
+        color: var(--secondary);
+      }
+    }
+  }
   .note-properties-link {
     text-decoration: none;
     color: var(--secondary);
@@ -139,18 +154,3 @@
     }
   }
 }
-
-// My custom styles for the link button
-.link-button a {
-  background-color: var(--secondary);
-  color: var(--light);
-  padding: 0.2rem 0.5rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  &:hover {
-    background-color: var(--highlight);
-    color: var(--secondary);
-  }
-}
-
