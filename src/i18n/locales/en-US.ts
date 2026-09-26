@@ -1,7 +1,7 @@
 export default {
   components: {
     noteProperties: {
-      title: "Properties",
+      title: "Info",
     },
   },
 };

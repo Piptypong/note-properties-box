@@ -139,3 +139,19 @@
     }
   }
 }
+
+// My custom styles for the link button
+.link-button {
+  background-color: var(--secondary);
+  color: var(--light);
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 0.85em;
+
+  &:hover {
+    background-color: var(--highlight);
+    color: var(--secondary);
+  }
+}
+
