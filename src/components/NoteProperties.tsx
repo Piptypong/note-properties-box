@@ -219,7 +219,13 @@ export default ((opts?: NotePropertiesComponentOptions) => {
             {entries.map(([key, value]) => (
               <tr key={key} class="note-properties-row metadata-property">
                 <td class="note-properties-key metadata-property-key">{key}</td>
-                <td class={`{key === "link" && "link-button"} "note-properties-value metadata-property-value"`}>
+                <td
+                  class={classNames(
+                    "note-properties-value",
+                    "metadata-property-value",
+                    key === "link" && "link-button",
+                  )}
+                >
                   {key === "tags" && Array.isArray(value)
                     ? renderTagList(value as string[], ctx)
                     : renderValue(value, ctx)}
